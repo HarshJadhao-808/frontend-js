@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #0d47a1 0%, #000000 70%);
+    font-family: sans-serif;
+  }
+  #nav_bar{
+    height: 150px;
+    width: 100%;
+    /* border: 3px solid red; */
+  }
+  #heading{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+  }
+
+  #heading>h1{
+    color: aliceblue;
+    font-size: 70px;
+  }
+  #box{
+    margin: auto;
+    /* border: 3px solid red; */
+    height: 500px;
+    width: 700px;
+    background: radial-gradient(circle, #a2a5ab 0%, #3d616d 70%);
+    
+  }

@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="./loginstyle.css" />
+  </head>
+  <body>
+    <div id="logo">
+      <img
+        src="../images/ChatGPT_Image_Jun_9__2025__02_15_54_PM-removebg-preview.png"
+        alt=""
+      />
+    </div>
+    <div id="login_section">
+      <div id="login_heading">
+        <img
+          src="../images/ChatGPT_Image_Jun_9__2025__03_06_56_PM-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div id="username">
+        <img src="../images/Username-removebg-preview.png" alt="" /><input
+          id="name"
+          type="text"
+        />
+      </div>
+      <div id="password">
+        <img src="../images/Password-removebg-preview.png" alt="" /><input
+          id="pass"
+          type="password"
+        />
+      </div>
+      <div id="submit_button">
+        <button id="submit" onclick="output()">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let username = "Harsh";
+    let password = "123321";
+
+    
+    function output() {
+        let input_username = document.getElementById("name");
+        let input_password = document.getElementById("pass");
+      if (input_username.value !== username && input_password.value == password) {
+        return alert("Wrong Username please try again");
+      } else if (input_password.value !== password && input_username.value == username) {
+        return alert("Wrong password please try again");
+      } else if (
+        input_username.value !== username &&
+        input_password.value !== password
+      ) {
+        return alert("Wrong credentials please try again");
+    }
+    else{
+        window.location.href = "mainpage.html";
+          return alert("Login succesful !");
+
+      }
+    }
+  </script>
+</html>
