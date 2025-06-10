@@ -25,8 +25,63 @@
   #box{
     margin: auto;
     /* border: 3px solid red; */
-    height: 500px;
+    height: 350px;
     width: 700px;
-    background: radial-gradient(circle, #a2a5ab 0%, #3d616d 70%);
-    
+    /* background: radial-gradient(circle, #a2a5ab 0%, #3d616d 70%); */
+    padding-top: 20px;
+  }
+  video{
+    width: 100%;
+  }
+  #white_space{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+  #factorial{
+    border: none;
+    font-size: 40px;
+    outline: none;
+    text-align: center;
+  }
+  #bg-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    object-fit: cover;
+  }
+  #answer_space{
+    height: 200px;
+    background-color: white;
+    margin-top: 60px;
+  }
+  /* #answer_box{
+    position:relative;
+    top: 145px;
+    height: 50px;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+  } */
+  #answer_box{
+    margin-top: 8px;
+    height: 50px;
+    background-color: white;
+  }
+  #answer_box{
+    text-align: center;
+  }
+  #confirm_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: red;
   }
