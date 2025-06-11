@@ -62,19 +62,15 @@
     height: 200px;
     background-color: white;
     margin-top: 60px;
+    text-align: justify;
   }
-  /* #answer_box{
-    position:relative;
-    top: 145px;
-    height: 50px;
-    border: 3px solid green;
-    display: flex;
-    justify-content: center;
-  } */
   #answer_box{
     margin-top: 8px;
     height: 50px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #answer_box{
     text-align: center;
@@ -83,5 +79,15 @@
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    background-color: red;
+    background-color: rgb(101, 215, 101);
+  }
+
+  #retry{
+background-color: red;
+width: 30px;
+height: 30px;
+border: none;
+border-radius: 7px;
+position: fixed;
+left: 1070;
   }
