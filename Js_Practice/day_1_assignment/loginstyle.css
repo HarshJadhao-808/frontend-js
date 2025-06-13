@@ -110,3 +110,17 @@ body {
     border-radius: 30px;
     border:none;
 }
+
+#charity_site{
+position: fixed;
+top: -70px;
+left: 1300px;
+
+}
+
+#charity_site>a{
+    all: unset;
+}
+#donate_image{
+    width: 250px;
+}
