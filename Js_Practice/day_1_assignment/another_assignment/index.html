@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form to Table Project</title>
+ <link rel="stylesheet" href="./bigstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Charity Form</h2>
+
+    <form id="dataForm">
+      <!-- Select 1 -->
+      <select id="gender" required>
+          <option value="male">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+      </select>
+
+      <!-- Select 2 -->
+      <select id="age_group" required>
+          <option value="">Age group</option>
+          <option value="Little Light of Hope">Below 15</option>
+        <option value="Rising Humanitarian">above 15 & Below 25</option>
+        <option value="Heart of Gold Donor">above 25 & below 50</option>
+        <option value="Legacy Builder">above 50</option>
+      </select>
+
+      <!-- Input 1 -->
+      <input type="text" id="amount_letters" placeholder="Enter amount in letters" required />
+
+      <!-- Input 2 -->
+      <input type="number" id="amount_number" placeholder="Enter amount in numbers" required />
+
+      <!-- Input 3 -->
+      <input type="email" id="e_mail" placeholder="Enter your E-mail" required />
+      <button >submit</button>
+    </form>
+
+  </div>
+
+<h1 id="donors">Our Donors</h1>
+  <div id="table_div">
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Gender</th>
+          <th>Title</th>
+          <th>amount in letters</th>
+          <th>amount in numbers</th>
+          <th> E-mail</th>
+          <th>Cancel Text</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
